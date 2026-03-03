@@ -2,8 +2,32 @@ using UnityEngine;
 
 public class Corgi : MonoBehaviour
 {
-    public void Move()
+    private SpriteRenderer spriteRenderer;
+
+    public void Awake()
     {
-        // make corgi move
+        // look at the object it is attached to and wire it up automatically
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+    
+    public void Move(Vector2 direction)
+    {
+        FaceCurrentDirection(direction);
+        
+        Vector2 movementAmount = GameParameters.CorgiMoveSpeed * direction * Time.deltaTime;
+        spriteRenderer.transform.Translate(movementAmount.x, movementAmount.y, 0);
+    }
+
+    private void FaceCurrentDirection(Vector2 direction)
+    {
+        if (direction.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (direction.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        
     }
 }
