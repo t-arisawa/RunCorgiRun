@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0b0999ec-a476-414a-af4b-ceee040a0e0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RunCorgiRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RunCorgiRun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/CorgiDrunk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/CorgiDrunk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Beer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Beer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pill.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pill.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RunCorgiRun.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RunCorgiRun.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Corgi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Corgi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyboardInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KeyboardInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +116,8 @@
       <workItem from="1772751242077" duration="3217000" />
       <workItem from="1773166881931" duration="1740000" />
       <workItem from="1773179028562" duration="2005000" />
-      <workItem from="1773351811384" duration="2342000" />
+      <workItem from="1773351811384" duration="2627000" />
+      <workItem from="1773784734376" duration="2535000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit?">
       <option name="closed" value="true" />
@@ -132,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772581576352</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added beer pill bone all that stuff">
+      <option name="closed" value="true" />
+      <created>1773354439197</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773354439197</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +172,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit?" />
     <MESSAGE value="corgi moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="corgi moves" />
+    <MESSAGE value="added beer pill bone all that stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="added beer pill bone all that stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
