@@ -8,6 +8,7 @@ TagManager:
   - Beer
   - Bone
   - Pill
+  - Moonshine
   layers:
   - Default
   - TransparentFX
