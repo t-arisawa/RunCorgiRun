@@ -12,22 +12,22 @@ public class KeyboardInput : MonoBehaviour
   
         if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)
         {
-            Corgi.Move(Vector2.up);
+            Corgi.MoveManually(Vector2.up);
         }
         
         if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)
         {
-            Corgi.Move(Vector2.down);
+            Corgi.MoveManually(Vector2.down);
         }
         
         if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)
         {
-            Corgi.Move(Vector2.left);
+            Corgi.MoveManually(Vector2.left);
         }
         
         if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)
         {
-            Corgi.Move(Vector2.right);
+            Corgi.MoveManually(Vector2.right);
         }
 
         // if (keyboard.spaceKey.isPressed)

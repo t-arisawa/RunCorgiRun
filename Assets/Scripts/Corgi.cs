@@ -1,17 +1,22 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SocialPlatforms.Impl;
 using Random = UnityEngine.Random;
 
 
 public class Corgi : MonoBehaviour
 {
+    public UI Ui;
     public Sprite DrunkSprite;
     public Sprite SoberSprite;
     
     private SpriteRenderer spriteRenderer;
     private bool isDrunk = false;
     private Coroutine soberUpCoroutine;
+
+    private int randomMoveCounter = 0;
+    private int lastRandomDirection = 0;
 
     private bool isPlastered = false;
 
@@ -30,45 +35,60 @@ public class Corgi : MonoBehaviour
 
     private void MoveRandomly()
     {
-        int direction = Random.Range(0, 4);
+        int direction = lastRandomDirection;
+        
+        if (randomMoveCounter == 0)
+        {
+            direction = Random.Range(0, 4);
+            lastRandomDirection = direction;
+            randomMoveCounter = Random.Range(20, 60);
+        }
+        
         switch (direction)
         {
             case 0:
-                Move(new Vector2(1,0));
+                Move(new Vector2(1, 0));
                 break;
-            
+
             case 1:
-                Move(new Vector2(-1,0));
+                Move(new Vector2(-1, 0));
                 break;
-            
+
             case 2:
-                Move(new Vector2(0,1));
+                Move(new Vector2(0, 1));
                 break;
-            
+
             case 3:
-                Move(new Vector2(0,-1));
+                Move(new Vector2(0, -1));
                 break;
         }
+
+        randomMoveCounter = randomMoveCounter - 1;
         
+
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        // print("trigger");
-        
         if (other.tag == "Beer")
         {
             print("beer");
             GetDrunk();
-            Destroy(other);
+            Destroy(other.gameObject);
         }
         else if (other.tag == "Bone")
         {
             print("bone");
+            Destroy(other.gameObject);
+            ScoreKeeper.AddPoint();
+            print("Score: " + ScoreKeeper.GetScore());
+            Ui.SetScoreText(ScoreKeeper.GetScore());
         }
         else if (other.tag == "Pill") 
         {
             print("pill");
+            SoberUp();
+            Destroy(other.gameObject);
         }
     }
     
@@ -135,6 +155,14 @@ public class Corgi : MonoBehaviour
         Vector2 movementAmount = GameParameters.CorgiMoveSpeed * direction * Time.deltaTime;
         spriteRenderer.transform.Translate(movementAmount.x, movementAmount.y, 0);
         spriteRenderer.transform.position = SpriteTools.ConstrainToScreen(spriteRenderer);
+    }
+
+    public void MoveManually(Vector2 direction)
+    {
+        if (!isPlastered)
+        {
+            Move(direction);
+        }
     }
 
     private Vector2 ApplyDrunkenness(Vector2 direction)
