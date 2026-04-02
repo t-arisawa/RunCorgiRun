@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0b0999ec-a476-414a-af4b-ceee040a0e0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RunCorgiRun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RunCorgiRun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ButtonPlay.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/ButtonPlay.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ButtonPlayAgain.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/ButtonPlayAgain.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ScreenGameOver.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/ScreenGameOver.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/ScreenStart.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/ScreenStart.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Moonshine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Moonshine.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RunCorgiRun.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RunCorgiRun.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Corgi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Corgi.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KeyboardInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KeyboardInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameParameters.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Moonshine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Moonshine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoonshinePlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoonshinePlacer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimedObjectPlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimedObjectPlacer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Art/ButtonPlay.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Beer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BeerPlacer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game.cs" root0="FORCE_HIGHLIGHTING" />
@@ -43,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Poop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimedObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@f250afc9b68d/Runtime/TMP/TMP_PackageResourceImporter.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -122,7 +127,8 @@
       <workItem from="1773351811384" duration="2627000" />
       <workItem from="1773784734376" duration="2626000" />
       <workItem from="1773957598445" duration="2475000" />
-      <workItem from="1774992885010" duration="4281000" />
+      <workItem from="1774992885010" duration="4299000" />
+      <workItem from="1775166660713" duration="2756000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit?">
       <option name="closed" value="true" />
@@ -164,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773960075446</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="march 31 updates">
+      <option name="closed" value="true" />
+      <created>1774997193518</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774997193518</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +210,8 @@
     <MESSAGE value="added beer pill bone all that stuff" />
     <MESSAGE value="added drunkenness and sobering up with the beer" />
     <MESSAGE value="moonshine" />
-    <option name="LAST_COMMIT_MESSAGE" value="moonshine" />
+    <MESSAGE value="march 31 updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="march 31 updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

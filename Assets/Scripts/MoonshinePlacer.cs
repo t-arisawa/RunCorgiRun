@@ -8,11 +8,11 @@ public class MoonshinePlacer : TimedObjectPlacer
         maximumSecondsToWait = GameParameters.MoonshineMaximumSecondsToWait;
     }
     
-    public GameObject moonshinePrefab;
+    //public GameObject moonshinePrefab;
     
     public override void Place()
     {
-        Instantiate(Prefab, SpawnTools.RandomTopOfScreenLocationScreenSpace(), Quaternion.identity);
+        Instantiate(prefab, SpawnTools.RandomTopOfScreenLocationWorldSpace(), Quaternion.identity);
     }
     
 }

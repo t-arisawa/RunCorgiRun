@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4685460650659407922}
   - component: {fileID: 2296272732449921730}
   - component: {fileID: -6821306513408516877}
-  - component: {fileID: 8133054136582497378}
+  - component: {fileID: -1122029626696085368}
   m_Layer: 0
   m_Name: Moonshine
   m_TagString: Moonshine
@@ -152,7 +152,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.76, y: 1.28}
   m_EdgeRadius: 0
---- !u!50 &8133054136582497378
+--- !u!50 &-1122029626696085368
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

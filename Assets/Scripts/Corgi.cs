@@ -31,6 +31,7 @@ public class Corgi : MonoBehaviour
         {
             MoveRandomly();
         }
+        
     }
 
     private void MoveRandomly()
@@ -88,6 +89,12 @@ public class Corgi : MonoBehaviour
         {
             print("pill");
             SoberUp();
+            Destroy(other.gameObject);
+        }
+        else if (other.tag == "Moonshine") 
+        {
+            print("moonshine");
+            GetDrunk();
             Destroy(other.gameObject);
         }
     }

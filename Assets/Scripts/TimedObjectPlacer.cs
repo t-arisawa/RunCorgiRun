@@ -4,7 +4,7 @@ using NUnit.Framework.Constraints;
 
 public class TimedObjectPlacer : MonoBehaviour
 {
-    public GameObject Prefab;
+    public GameObject prefab;
     
     public float minimumSecondsToWait;
     public float maximumSecondsToWait;
@@ -30,7 +30,7 @@ public class TimedObjectPlacer : MonoBehaviour
 
     public virtual void Place()
     {
-        Instantiate(Prefab, SpawnTools.RandomLocationWorldSpace(), Quaternion.identity);
+        Instantiate(prefab, SpawnTools.RandomLocationWorldSpace(), Quaternion.identity);
     }
     
     
